@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Hotel Cancellation Policy</title>
+</head>
+<body>
+    <header class="top">
+        <h3 class="header__title">Wanna get away from it all?</h3>
+    </header>
+    <main>
+        <aside class="input__container">
+            <div class="row">
+                <form id="formField" action="#">
+                    <label class="lable__ref" for="ref">Refundable Option</label>
+                    <select id="ref" title="refundable for extra charge" class="input__type">
+                        <option value="nonref" selected>Non Refundable</option>
+                        <option value="ref">Refundable</option>
+                    </select>
+                    <label class="lable__arrive" for="arrive">Arrival date</label>
+                    <input name="arrive11" id="arrive" title="Arrive" type="date" class="input__arrive">
+                    <label class="lable__depart" for="depart">Departure date</label>
+                    <input id="depart" title="Depart" type="date" class="input__depart">
+                    <button type="submit" class="add__btn">Submit <i class="far fa-plus-square"></i></button>
+                </form>
+            </div>
+        </aside>
+    </main>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+.top {
+    height: 40vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('hotel.jpg');
+    background-size: cover;
+    background-position: center;
+    display:grid;
+    justify-content: center;
+    align-content: center;
+}
+.header__title{
+   font-size:2em;
+   text-shadow: 4px 4px 4px rgba(10, 10, 10, 0.651);
+    color: azure;
+
+}
+
+.input__container{
+    background: rgb(223, 219, 219);
+    display: grid;
+    height: 10vh;
+    justify-content: center;
+    align-content: center;
+}
