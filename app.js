@@ -56,16 +56,19 @@ document.addEventListener('keypress', event =>{
 });
 
 function fnSubmit(e){
-
     e.preventDefault();
-    let days, arriveDate, departDate;
+    
+    let days, arriveDate, departDate, refundable, policy, date, rateCode;
+    
     arriveDate = document.querySelector("#arrive").valueAsDate;
     departDate = document.querySelector("#depart").valueAsDate;
     rateCode = document.querySelector("#ref").value;
+    
     days = dataController.days_between(arriveDate,departDate);
     refundable = dataController.type(rateCode);
     policy = dataController.lengthOfStay(days);
     date = dataController.day(days);
+    
     return days, refundable, policy, date
 }
 
