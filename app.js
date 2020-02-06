@@ -70,11 +70,4 @@ function fnSubmit(e){
     date = dataController.day(days);
     
     return days, refundable, policy, date
-}
-
-  
-
-
-
-
-  
+};
